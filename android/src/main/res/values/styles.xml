@@ -1,0 +1,18 @@
+<resources>
+    <!-- 自定义标题样式 -->
+
+    <style name="windowtitlebackground">
+
+        <item name="android:background">#1E90FF</item>
+
+    </style>
+
+    <style name="windowtitlebgstyle" parent="android:Theme">
+
+        <!-- Window attributes -->
+
+        <item name="android:windowTitleBackgroundStyle">@style/windowtitlebackground </item>
+
+    </style>
+
+</resources>
