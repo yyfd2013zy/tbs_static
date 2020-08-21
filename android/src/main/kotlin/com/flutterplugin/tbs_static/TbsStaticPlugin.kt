@@ -26,19 +26,17 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   var mActivity: Activity? = null
   var mFlutterPluginBinding: FlutterPlugin.FlutterPluginBinding? = null
 
-  private lateinit var channel : MethodChannel
-  override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "tbs_static")
-    channel.setMethodCallHandler(this)
-  }
 
+  //兼容旧方式集成插件
   companion object {
+    var methodChannel: MethodChannel? = null
     @JvmStatic
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "tbs_static")
-      channel.setMethodCallHandler(TbsStaticPlugin())
+      channel.setMethodCallHandler(TbsStaticPlugin(registrar.context(),registrar.activity()))
     }
   }
+
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "getPlatformVersion") {
@@ -62,8 +60,24 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     }
   }
 
+
+  //新方式集成插件
+  override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+    if (mActivity == null) {
+      mFlutterPluginBinding = binding
+      return
+    }
+    mFlutterPluginBinding = binding
+    mContext = binding.applicationContext
+
+    methodChannel = MethodChannel(binding.binaryMessenger, "tbs_static")
+    methodChannel?.setMethodCallHandler(TbsStaticPlugin(mContext!!,mActivity!!))
+  }
+
   override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-    channel.setMethodCallHandler(null)
+    mFlutterPluginBinding = null
+    methodChannel?.setMethodCallHandler(null)
+    methodChannel = null
   }
 
   override fun onDetachedFromActivity() {
@@ -79,6 +93,8 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     }
     this.mActivity = binding.activity
     this.mContext = binding.activity.applicationContext
+    methodChannel = MethodChannel(mFlutterPluginBinding?.binaryMessenger, "tbs_static")
+    methodChannel?.setMethodCallHandler(TbsStaticPlugin(mContext!!,mActivity!!))
   }
 
   override fun onDetachedFromActivityForConfigChanges() {
