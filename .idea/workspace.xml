@@ -2,14 +2,18 @@
 <project version="4">
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="X5WebViewActivity" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a44d37-9d3c-4501-bb1c-3526e7f69666" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -26,44 +30,21 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="3a15f167" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="8f53d495" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+        <entry file="file://$PROJECT_DIR$/example/android/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-557">
-              <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
-              <folding>
-                <element signature="e#37#598#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/android/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/example/build/app/outputs/flutter-apk/app-release.apk">
+          <provider selected="true" editor-type-id="apk-viewer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -81,8 +62,20 @@
     </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>defaultTargetPlatform</find>
+      <find>I/X5WebViewActivity: 新安装</find>
+      <find>: 安装结果：true</find>
+      <find>2020-08-24 17:45:31.800 25585-25585/? E/TbsSDKExtension: tbslog exceptions:java.lang.ClassNotFoundException: com.tencent.smtt.utils.TbsLog</find>
+      <find>at void com.flutterplugin.tbs_static.X5WebViewActivity.createWebview() (X5WebViewActivity.kt:62)</find>
+      <find>/X5WebViewActivity: 新安装</find>
+      <find>shrinkResources</find>
+      <find>minifyEnabled</find>
+      <find>shrinkResourcestrue</find>
+    </findStrings>
     <dirStrings>
       <dir>D:\workspace\android_work\Company_Flutter_Project\plugin\tbs_static</dir>
+      <dir>D:\workspace\android_work\Company_Flutter_Project\data_mobile_portal\plugins\tbs_static</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -91,11 +84,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/tbs_static.dart" />
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
-        <option value="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" />
+        <option value="$PROJECT_DIR$/example/lib/main.dart" />
+        <option value="$PROJECT_DIR$/lib/tbs_static.dart" />
+        <option value="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt" />
         <option value="$PROJECT_DIR$/android/build.gradle" />
+        <option value="$PROJECT_DIR$/example/android/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -111,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,20 +121,52 @@
             <path>
               <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
               <item name="tbs_static" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
               <item name="tbs_static" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs_static" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs_static" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs_static" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+              <item name="flutter-apk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs_static" type="462c0819:PsiDirectoryNode" />
+              <item name="flutter_assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs_static" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -147,8 +174,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/src/main/jniLibs/arm64-v8a" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\android_work\Company_Flutter_Project\data_mobile_portal\plugins\tbs_static\android\src\main\jniLibs\arm64-v8a" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -183,11 +215,20 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24957936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26416153" />
       <window_info id="Designer" order="1" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -196,17 +237,17 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.5327586" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.43176973" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.53198296" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.26306307" />
       <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="TODO" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.6641791" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32942432" />
-      <window_info anchor="bottom" id="Debug" order="8" />
-      <window_info anchor="bottom" id="Logcat" order="9" weight="0.75373137" />
-      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="TODO" order="4" weight="0.32942432" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32942432" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3496802" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4371002" />
+      <window_info anchor="bottom" id="Logcat" order="8" weight="0.8198294" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32942432" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Flutter Inspector" order="2" />
@@ -220,18 +261,29 @@
     <MESSAGE value="project init" />
     <option name="LAST_COMMIT_MESSAGE" value="project init" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -241,6 +293,80 @@
           <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/jniLibs/arm64-v8a/libtbs.1.so" />
+    <entry file="file://D:/Flutter/flutter_windows_v1.9.1+hotfix.6-stable/flutter/packages/flutter/lib/src/foundation/platform.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/build/app/outputs/apk/release/app-release.apk" />
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="71" column="48" lean-forward="true" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+          <folding>
+            <element signature="e#37#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/build/tbs_static/outputs/aar/tbs_static-release.aar" />
+    <entry file="file://$PROJECT_DIR$/example/build/tbs_static/outputs/aar/tbs_static-debug.aar" />
+    <entry file="file://$PROJECT_DIR$/example/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/build/app/outputs/flutter-apk/app.apk.sha1" />
+    <entry file="file://$PROJECT_DIR$/example/build/app/outputs/apk/debug/app-debug.apk" />
+    <entry file="file://$PROJECT_DIR$/example/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/build/app/outputs/flutter-apk/app.apk">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/build/app/outputs/flutter-apk/app-debug.apk">
+      <provider selected="true" editor-type-id="apk-viewer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tbs_static.dart">
       <provider selected="true" editor-type-id="text-editor">
@@ -252,37 +378,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/example/android/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="288">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
-          <folding>
-            <element signature="e#37#598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/example/build/app/outputs/flutter-apk/app-release.apk">
+      <provider selected="true" editor-type-id="apk-viewer" />
     </entry>
   </component>
 </project>

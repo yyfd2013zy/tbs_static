@@ -53,8 +53,8 @@ class _MyAppState extends State<MyApp> {
           child: InkWell(
             onTap: () async {
               try {
-
-                var gg = await TbsStatic.openWebActivity(" https://10.155.0.134:31311/static/testvideo/video.html?sid=60cbd910-d555-11ea-af73-45d5ffed74da&userName=cross&token=CA50B2B0E37011EA87A219C1CF68FE0E&serverAddress=wss://10.155.0.135:30670/hari&accountId=AZ019121",title: "测试界面",landspace:true );
+                var gg = await TbsStatic.openWebActivity("https://10.155.0.134:31311/static/testvideo/video.html?sid=60cbd910-d555-11ea-af73-45d5ffed74da&userName=cross&token=F62541A0E5CB11EA87A219C1CF68FE0E&serverAddress=wss://10.155.0.135:30670/hari&accountId=AZ019121",title: "测试界面",landspace:true );
+//          var gg = await TbsStatic.openWebActivity("http://debugtbs.qq.com",title: "测试界面",landspace:true );
               } on PlatformException {
 
               }

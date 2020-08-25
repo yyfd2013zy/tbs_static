@@ -6,6 +6,7 @@ import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.widget.LinearLayout
+import com.tencent.smtt.export.external.interfaces.SslError
 import com.tencent.smtt.export.external.interfaces.SslErrorHandler
 import com.tencent.smtt.export.external.interfaces.WebResourceError
 import com.tencent.smtt.export.external.interfaces.WebResourceRequest
@@ -39,15 +40,18 @@ class X5WebViewActivity : Activity() {
         title = intent.getStringExtra("title")
         url= intent.getStringExtra("url")
         setTitle(title)
+    }
 
-        if (QbSdk.canLoadX5(applicationContext)) {
+    override fun onResume() {
+        super.onResume()
+        Log.i(TAG, "onResume")
+        if (QbSdk.canLoadX5(this)) {
             Log.i(TAG, "已安装好，直接显示")
             createWebview()
         } else {
             Log.i(TAG, "新安装")
             Thread(Runnable {
                 val ok = QbSdk.preinstallStaticTbs(this)
-//
                 runOnUiThread {
                     Log.i(TAG, "安装结果：$ok")
                     createWebview()
@@ -107,11 +111,12 @@ class X5WebViewActivity : Activity() {
 
         override fun onReceivedError(p0: WebView?, p1: WebResourceRequest?, p2: WebResourceError?) {
             super.onReceivedError(p0, p1, p2)
-            Log.d(TAG, "webview onReceivedError : $p2")
+            Log.d(TAG, "webview onReceivedError :description : ${p2?.description}  errorCode :"+p2?.errorCode)
         }
 
-        override fun onReceivedSslError(p0: WebView?, p1: SslErrorHandler?, p2: com.tencent.smtt.export.external.interfaces.SslError?) {
-            Log.d(TAG, "onReceivedSslError : $p1")
+        override fun onReceivedSslError(p0: WebView?, p1: SslErrorHandler?, p2: SslError?) {
+            Log.d(TAG, "webview onReceivedSslError : ${p2.toString()}")
+//            super.onReceivedSslError(p0, p1, p2)
             p1?.proceed()
         }
     }
