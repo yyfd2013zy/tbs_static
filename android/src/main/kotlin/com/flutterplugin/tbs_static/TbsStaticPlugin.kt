@@ -3,8 +3,9 @@ package com.flutterplugin.tbs_static
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.annotation.NonNull
-
+import com.tencent.smtt.sdk.QbSdk
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
@@ -30,14 +31,19 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   //兼容旧方式集成插件
   companion object {
     var methodChannel: MethodChannel? = null
+    //注册MethodChannel
     @JvmStatic
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "tbs_static")
       channel.setMethodCallHandler(TbsStaticPlugin(registrar.context(),registrar.activity()))
+      //注册
+      registrar.platformViewRegistry().registerViewFactory("com.tbs_static/x5WebView", X5WebViewFactory(registrar.messenger(), registrar.activity(), registrar.view()))
     }
   }
 
-
+  /**
+   * 具体方法实现
+   */
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
@@ -55,7 +61,19 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       intent.putExtra("landspace", landspace)
       mActivity?.startActivity(intent)
       result.success(null)
-    } else {
+    } else if (call.method == "preinstallStaticTbs"){
+     /* var ok = false
+      if (QbSdk.canLoadX5(mActivity)) {
+        result.success(ok)
+      } else {
+        *//*Thread(Runnable {
+
+        }).start()*//*
+        ok = QbSdk.preinstallStaticTbs(mActivity)
+        result.success(ok)
+      }*/
+
+    }else {
       result.notImplemented()
     }
   }

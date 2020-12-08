@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="X5WebViewActivity" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="X5WebViewPage" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -27,12 +27,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a44d37-9d3c-4501-bb1c-3526e7f69666" name="Default Changelist" comment="兼容旧方式集成插件">
+    <list default="true" id="75a44d37-9d3c-4501-bb1c-3526e7f69666" name="Default Changelist" comment="merge commit">
+      <change afterPath="$PROJECT_DIR$/android/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/DisplayListenerProxy.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/InputAwareWebView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/JavascriptChannel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/ThreadedInputConnectionProxyAdapterView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/X5WebViewPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/x5_webview.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tbs_static.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tbs_static.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +52,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[3a15f167]" />
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>defaultTargetPlatform</find>
-      <find>I/X5WebViewActivity: 新安装</find>
-      <find>: 安装结果：true</find>
-      <find>2020-08-24 17:45:31.800 25585-25585/? E/TbsSDKExtension: tbslog exceptions:java.lang.ClassNotFoundException: com.tencent.smtt.utils.TbsLog</find>
-      <find>at void com.flutterplugin.tbs_static.X5WebViewActivity.createWebview() (X5WebViewActivity.kt:62)</find>
-      <find>/X5WebViewActivity: 新安装</find>
-      <find>shrinkResources</find>
-      <find>minifyEnabled</find>
-      <find>shrinkResourcestrue</find>
-    </findStrings>
-    <dirStrings>
-      <dir>D:\workspace\android_work\Company_Flutter_Project\plugin\tbs_static</dir>
-      <dir>D:\workspace\android_work\Company_Flutter_Project\data_mobile_portal\plugins\tbs_static</dir>
-    </dirStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,11 +73,14 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/src/main/jniLibs/arm64-v8a" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\android_work\Company_Flutter_Project\plugin\tbs_static\lib" />
+      <recent name="D:\workspace\android_work\Company_Flutter_Project\plugin\tbs_static\android\src\main\kotlin\com\flutterplugin\tbs_static" />
       <recent name="D:\workspace\android_work\Company_Flutter_Project\data_mobile_portal\plugins\tbs_static\android\src\main\jniLibs\arm64-v8a" />
     </key>
   </component>
@@ -107,17 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1607393108070</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merge commit">
+      <created>1607402544996</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607402544996</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -159,41 +159,63 @@
         <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project init" />
     <MESSAGE value="兼容旧方式集成插件" />
-    <option name="LAST_COMMIT_MESSAGE" value="兼容旧方式集成插件" />
+    <MESSAGE value="merge commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="591" key="GridCell.Tab.0.bottom" timestamp="1607395494614">
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1607416561879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="591" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607395494614" />
-    <state width="1877" height="591" key="GridCell.Tab.0.center" timestamp="1607395494614">
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607416561879" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607407805548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="591" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607395494614" />
-    <state width="1877" height="591" key="GridCell.Tab.0.left" timestamp="1607395494614">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607407805548" />
+    <state width="1877" height="789" key="GridCell.Tab.0.bottom" timestamp="1607423522425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="591" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607395494614" />
-    <state width="1877" height="591" key="GridCell.Tab.0.right" timestamp="1607395494614">
+    <state width="1877" height="789" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522425" />
+    <state width="1877" height="789" key="GridCell.Tab.0.center" timestamp="1607423522425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="591" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607395494614" />
+    <state width="1877" height="789" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522425" />
+    <state width="1877" height="789" key="GridCell.Tab.0.left" timestamp="1607423522424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="789" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522424" />
+    <state width="1877" height="789" key="GridCell.Tab.0.right" timestamp="1607423522425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="789" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522425" />
     <state x="595" y="280" key="MultipleFileMergeDialog" timestamp="1607393188689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="595" y="280" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607393188689" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607393114769">
+    <state x="535" y="221" key="RollbackChangesDialog" timestamp="1607416563134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607393114769" />
-    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607393123666">
+    <state x="535" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607416563134" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1607402801378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607393123666" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607402801378" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607402630547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607402630547" />
+    <state x="469" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607418822116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="469" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607418822116" />
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607402553737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607402553737" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
