@@ -32,7 +32,6 @@ android {
     }
     defaultConfig {
         minSdkVersion 16
-        ndk {abiFilters "armeabi","x86"}
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -40,7 +39,7 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation files('libs/tbs_sdk_thirdapp_v3.5.0.1063_43500_staticwithdownload_withoutGame_obfs_20171011_195714.jar')
-
 }
