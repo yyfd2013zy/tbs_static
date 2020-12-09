@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="X5WebViewPage" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -27,21 +26,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a44d37-9d3c-4501-bb1c-3526e7f69666" name="Default Changelist" comment="merge commit">
-      <change afterPath="$PROJECT_DIR$/android/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/DisplayListenerProxy.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/InputAwareWebView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/JavascriptChannel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/ThreadedInputConnectionProxyAdapterView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/lib/X5WebViewPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/x5_webview.dart" afterDir="false" />
+    <list default="true" id="75a44d37-9d3c-4501-bb1c-3526e7f69666" name="Default Changelist" comment="添加Flutter Widget 调用方式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tbs_static.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tbs_static.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607402544996</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加Flutter Widget 调用方式">
+      <created>1607424663114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607424663114</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +161,8 @@
     <MESSAGE value="project init" />
     <MESSAGE value="兼容旧方式集成插件" />
     <MESSAGE value="merge commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge commit" />
+    <MESSAGE value="添加Flutter Widget 调用方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Flutter Widget 调用方式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="86" key="DiffContextDialog" timestamp="1607416561879">
@@ -176,22 +173,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607407805548" />
-    <state width="1877" height="789" key="GridCell.Tab.0.bottom" timestamp="1607423522425">
+    <state width="1877" height="704" key="GridCell.Tab.0.bottom" timestamp="1607488398511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="789" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522425" />
-    <state width="1877" height="789" key="GridCell.Tab.0.center" timestamp="1607423522425">
+    <state width="1877" height="704" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607488398511" />
+    <state width="1877" height="704" key="GridCell.Tab.0.center" timestamp="1607488398510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="789" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522425" />
-    <state width="1877" height="789" key="GridCell.Tab.0.left" timestamp="1607423522424">
+    <state width="1877" height="704" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607488398510" />
+    <state width="1877" height="704" key="GridCell.Tab.0.left" timestamp="1607488398510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="789" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522424" />
-    <state width="1877" height="789" key="GridCell.Tab.0.right" timestamp="1607423522425">
+    <state width="1877" height="704" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607488398510" />
+    <state width="1877" height="704" key="GridCell.Tab.0.right" timestamp="1607488398511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="789" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607423522425" />
+    <state width="1877" height="704" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607488398511" />
     <state x="595" y="280" key="MultipleFileMergeDialog" timestamp="1607393188689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -204,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607402801378" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607402630547">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607424668892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607402630547" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607424668892" />
     <state x="469" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607418822116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -216,6 +213,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607402553737" />
+    <state x="1283" y="460" width="596" height="536" key="find.popup" timestamp="1607480688623">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1283" y="460" width="596" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607480688623" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607485339602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607485339602" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -229,6 +234,16 @@
           <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/X5WebViewActivity.kt</url>
           <line>113</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutterplugin/tbs_static/TbsStaticPlugin.kt</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/../../../../../Flutter/flutter_windows_v1.9.1+hotfix.6-stable/flutter/packages/flutter/lib/src/services/platform_views.dart</url>
+          <line>633</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

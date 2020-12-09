@@ -37,6 +37,7 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       val channel = MethodChannel(registrar.messenger(), "tbs_static")
       channel.setMethodCallHandler(TbsStaticPlugin(registrar.context(),registrar.activity()))
       //注册
+      System.out.println("register com.tbs_static/x5WebView")
       registrar.platformViewRegistry().registerViewFactory("com.tbs_static/x5WebView", X5WebViewFactory(registrar.messenger(), registrar.activity(), registrar.view()))
     }
   }
@@ -90,7 +91,8 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 
     methodChannel = MethodChannel(binding.binaryMessenger, "tbs_static")
     methodChannel?.setMethodCallHandler(TbsStaticPlugin(mContext!!,mActivity!!))
-  }
+
+   }
 
   override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
     mFlutterPluginBinding = null
@@ -113,6 +115,8 @@ public class TbsStaticPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     this.mContext = binding.activity.applicationContext
     methodChannel = MethodChannel(mFlutterPluginBinding?.binaryMessenger, "tbs_static")
     methodChannel?.setMethodCallHandler(TbsStaticPlugin(mContext!!,mActivity!!))
+
+    mFlutterPluginBinding?.platformViewRegistry?.registerViewFactory("com.tbs_static/x5WebView", X5WebViewFactory(mFlutterPluginBinding?.binaryMessenger!!, mActivity!!, null))
   }
 
   override fun onDetachedFromActivityForConfigChanges() {
